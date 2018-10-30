@@ -14,6 +14,7 @@ def test_coulomb():
     assert coulomb(0.0)
 
 
+
 def test_coulomb_throws_error():
     try:
         coulomb(0.0)
@@ -21,4 +22,8 @@ def test_coulomb_throws_error():
         raise Exception("Test failed")
     except ValueError:
         pass
+
+
+def test_add():
+    assert 2 + 2 == 4
 
